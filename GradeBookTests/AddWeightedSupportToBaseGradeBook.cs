@@ -76,7 +76,7 @@ namespace GradeBookTests
                     using (var consolestream = new StringWriter())
                     {
                         Console.SetOut(consolestream);
-                        StartingUserInterface.CreateCommand("create test standard");
+                        StartingUserInterface.CreateCommand("create test standard true");
                         output = consolestream.ToString().ToLower();
 
                         //Test that message written to console when parts.length != 4.
